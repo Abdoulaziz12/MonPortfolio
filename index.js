@@ -1,3 +1,11 @@
+const MenuToggle=document.querySelector('.menu-toggle');
+const NavLinks=document.querySelector('.nav-links');
+
+MenuToggle.addEventListener('click',()=>{
+    NavLinks.classList.toggle('active');
+});
+
+
 window.addEventListener('DOMContentLoaded', () => {
     // Sélectionne les sections à animer
     const sections = document.querySelectorAll('.hero, .about, .skills, .compétences, .contact-form');
